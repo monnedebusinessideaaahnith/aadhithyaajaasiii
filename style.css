@@ -1018,12 +1018,19 @@ flex-direction:column;
 
 text-align:center;
 
+gap: 25px;
+
 }
 
 .payment-text{
 
 text-align:center;
+align-items: center;
 
+}
+
+.payment-text h3{
+    font-size: 2rem;
 }
 
 .qr-image{
