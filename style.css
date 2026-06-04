@@ -981,11 +981,21 @@ repeat(2,1fr);
 
 @media(max-width:768px){
 
+body{
+overflow-x:hidden;
+}
+
 .hero{
 padding:15px;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .glass-card{
+width:95%;
+max-width:420px;
+margin:0 auto;
 border-radius:25px;
 }
 
@@ -1013,30 +1023,31 @@ letter-spacing:1px;
 }
 
 .payment-section{
-
+display:flex;
 flex-direction:column;
-
+align-items:center;
+justify-content:center;
 text-align:center;
-
-gap: 25px;
-
+gap:25px;
 }
 
 .payment-text{
-
 text-align:center;
-align-items: center;
-
+align-items:center;
+max-width:90%;
 }
 
 .payment-text h3{
-    font-size: 2rem;
+font-size:2rem;
+}
+
+.payment-text p{
+font-size:1.1rem;
+line-height:1.7;
 }
 
 .qr-image{
-
 width:250px;
-
 }
 
 .content{
@@ -1052,8 +1063,7 @@ font-size:.95rem;
 }
 
 .countdown{
-grid-template-columns:
-repeat(2,1fr);
+grid-template-columns:repeat(2,1fr);
 gap:15px;
 }
 
@@ -1071,18 +1081,31 @@ padding:20px;
 
 .gallery{
 padding:60px 15px;
+text-align:center;
 }
 
 .gallery h2{
 font-size:2rem;
+text-align:center;
 }
 
 .grid{
+display:flex;
+flex-direction:column;
+align-items:center;
 gap:15px;
+}
+
+.gallery-card{
+width:100%;
+max-width:450px;
+margin:0 auto;
 }
 
 .gallery-card img{
 height:260px;
+width:100%;
+object-fit:cover;
 }
 
 .btn{
@@ -1133,6 +1156,10 @@ height:220px;
 .btn{
 padding:14px 25px;
 font-size:.95rem;
+}
+
+.qr-image{
+width:220px;
 }
 
 }
