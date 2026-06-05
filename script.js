@@ -310,3 +310,14 @@ flag.remove();
 }
 
 setInterval(createFlag,1500);
+
+const timeCard = document.getElementById("timeCard");
+const weddingAudio = document.getElementById("weddingAudio");
+
+timeCard.addEventListener("click", () => {
+    if (weddingAudio.paused) {
+        weddingAudio.play();
+    } else {
+        weddingAudio.pause();
+    }
+});
