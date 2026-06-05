@@ -60,6 +60,15 @@ rotate(-5deg);
 
 }
 
+#timeCard{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#timeCard:hover{
+    transform:scale(1.03);
+}
+
 .payment-section{
 
 display:flex;
